@@ -4,15 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ondeck</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<style type="text/css"></style>
+
+    
+    
 </head>
 <body class="bg-light">
-	<div class="container">
+	<div class="container"><!--container-->
 		<nav class="navbar navbar-expand-lg bg-body-tertiary row">
-				 <a class="navbar-brand col-md-4" > <img src = "Assets/logo.svg" alt="logo"/></a>
-			  <div class="container-fluid col-md-4">
+				 <a class="navbar-brand col-sm-2" > <img src = "Assets/logo.svg" alt="logo"/></a>
+			  <div class="container-fluid col-sm-6">
 			   
 
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,45 +23,113 @@
 			    </button>
 			    <div class="collapse navbar-collapse" id="navbarNavDropdown">
 			      <ul class="navbar-nav">
-			        <li class="nav-item">
-			          <a class="nav-link " aria-current="page" href="#">Products</a>
-			        </li>
+			        <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  products
+						</a>
+						<ul class="dropdown-menu rounded p-4 bg-white"  >
+						  <li>
+							<a class="dropdown-item  mx-auto p-2" href="#" >
+							  <img src="Assets/Spense_Icon.svg">
+							    <span class="text-primary">Spense</span>
+							   <p style=" font-size: 15px;" >
+							       Spense is a landing page for writers. Great for <br>
+								   practicing absolute positioning and flex layouts
+							   </p>
+						    </a>  
+						   </li>
+						  <li>
+							<a class="dropdown-item mx-auto p-2"  href="#">
+								<img src="Assets/Fiber_Icon.svg">	
+								<span class="text-primary">Another action</span>
+						       <p style="font-size: 15px;">
+								    An online portfolio generator. Great to practice<br>
+									flex/grid layouts, and absolute positioning
+							    </p>
+						     </a>
+						</li>
+						  <li>
+							<a class="dropdown-item  mx-auto p-2" href="#">
+								<img src="Assets/Gradie_Icon.svg">
+								<span class="text-primary">Something else here</span>
+							    
+								<p style="font-size: 15px;">
+									Gradie is a simples sign up page, great to<br>
+									pratice centering layouts
+								</p>
+							</a>
+						</li>
+						</ul>
+					  </li>
+  
 			        <li class="nav-item">
 			          <a class="nav-link" href="#">Challenges</a>
 			        </li>
 			        <li class="nav-item">
 			          <a class="nav-link" href="#">Resources</a>
 			        </li>
-			        <li class="nav-item dropdown">
-			          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-			            other links
-			          </a>
-			          <ul class="dropdown-menu">
-			            <li><a class="dropdown-item" href="#">Action</a></li>
-			            <li><a class="dropdown-item" href="#">Another action</a></li>
-			            <li><a class="dropdown-item" href="#">Something else here</a></li>
-			          </ul>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">other links</a>
 			        </li>
-			        
-			       
-			         
-			       
 			      </ul>
 			    </div>
 			  </div>
 
-			  <div class="col-md-4">
-				<button type="button" class="btn btn-ligh">Sign in</button>
-			     <button class="btn btn-lg btn-success">Try for free</button>
+			  <div class="col-sm-4">
+				<button type="button" onclick="exibir()" class="btn btn-ligh">Sign in</button>
+			    <button class="btn btn-lg btn-success rounded-0">Try for free</button>
 
 			 </div>
 
-			</nav>
+		</nav>
 
-	</div>
+		<section style="margin-top: 100px;"><!--section-->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-8">
+						<h1 class="text-black">
+							Ondeck is your remote <span class="text-warning">conference calling tool</span>
+						</h1>
+
+						<p> Ondeck is a service that allows you to create beautiful, online, and encypted video Calls for 
+							you and your remote team
+						</p>
+
+						<button class="btn btn-lg btn-success mt-3 rounded-0">Try for free</button>
+
+						<p class="mt-3">
+							5.0 rating based on reviews from <img src="Assets/Capterra Logo.svg" class="mx-2"> <img src="Assets/AlternativeTo Logo.svg"><span></span> 
+						</p>
+	
+					</div>
+	
+					<div class="col-sm-4">
+						<img style="width: 80%;;" src = "Assets/Hero Image.png">
+					</div>
+
+				</div>
+				
+
+
+			</div>
+			
+		</section><!--./section-->
+
+		<footer style="margin-top: 10%; margin-bottom: 4%;">
+			<div class="container">
+				<div class="row justify-content-center">
+					<img class= "col-md-4" src = "Assets/Netflix Logo.svg" style="width: 17%; margin: 5px 50px 10px 3px">
+					<img class= "col-md-4" src="Assets/Shopify Logo.svg" style="width: 17%; margin: 5px 50px 10px 3px">
+					<img class= "col-md-4" src="Assets/spotify Logo.svg" style="width: 17%; margin: 5px 50px 10px 3px">
+					<img class= "col-md-4" src="Assets/walmart Logo.svg" style="width: 17%; margin: 5px 50px 10px 3px">
+				</div>
+			</div>
+		</footer>
+
+	</div><!--./container-->
 		
 
-	</div>
 	
 		
 			
